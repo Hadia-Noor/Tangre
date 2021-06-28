@@ -3,7 +3,7 @@ body{
     margin:0 !important;
     padding:0;
     overflow-x:hidden;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color:#999999;
 }
 /*heder*/
@@ -65,6 +65,10 @@ header{
     color:#999999;
     padding:0 5px;
 }
+/*blue icons*/
+.blue-icons{
+   color:rgb(0, 195, 255)
+}
 /*logo*/
 .logo{
     font-size:20px;
@@ -82,6 +86,7 @@ header{
     text-transform: uppercase;
     padding:0 2vw;
     float:right;
+    margin:-20px;
 }
 /*list styling in navbar*/
 .nav ul{
@@ -121,9 +126,10 @@ header{
     position: absolute;
     top: 5%; /* adjust as desired */
     left: 10%; /* adjust as desired */
-    font-family: Helvetica Neue;
     font-weight: lighter;
-    font-size: 5vw;   
+    font-size: 5vw; 
+    opacity: 0.5;  
+    text-align: start;
 
 }
 
@@ -162,6 +168,8 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     width: 50%;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
 }
   
 div.gallery:hover {
@@ -185,6 +193,7 @@ div.desc p{
 
 .projects div.gallery{
     border:none;
+    margin-bottom:40px
 }
 
 .projects div.gallery img{
@@ -242,15 +251,13 @@ div.desc p{
 .testimonial .left-column{
   flex:25%;
   margin-right:2%;
-
 }
 .textimonial .right-column{
-    flex:75%;    
+ flex:75%;    
 }
 .right-column .name{
-    color:rgb(70, 70, 70);
+    color:rgb(90, 90, 90);
     font-size:110%;
-    margin:10px;
 }
 
 /*newsletter*/
@@ -299,6 +306,7 @@ div.desc p{
     padding: 20px;
     flex: 40%;
     padding-top:30px;
+    padding-left:30px;
 
 }
   
@@ -337,7 +345,7 @@ div.desc p{
 .stats{
     background:rgb(37, 37, 37);
     justify-content: center;
-    font-size:12px;
+    font-size:22px;
     text-align: center;
     padding:50px 0;
     display:none;
@@ -351,6 +359,8 @@ div.desc p{
     font-weight:100;
     text-align: start;
     margin:0 30px;
+    font-size: initial;
+   
 }
 .stats h1{
     font-weight: 100;
@@ -367,7 +377,7 @@ div.desc p{
 }
 /*blue button styling*/
 .blue-btn{
-    border:1px solid #fff;
+    border:none;
     background:rgb(0, 195, 255);
     color:#fff;
     padding:10px 20px;
@@ -495,7 +505,6 @@ div.desc p{
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 /*button to open sidebar*/
@@ -507,7 +516,8 @@ div.desc p{
     border: none;
     background:#fff;
     float:right;
-    display:none;
+    display:inline;
+    margin:-10px;
 }
 
 /*button on hover*/
@@ -556,8 +566,8 @@ footer{
 @media screen and (max-width:600px){
     .header1{display:none;}
     .nav{display:none;}
-    div.gallery{width:100%;}
-    .sections #row{flex-direction:column;}
+    div.gallery{width:120%;}
+    .sections #row{flex-direction:column; width:90%;margin-bottom:20px;justify-content: center;}
     .testimonials{flex-direction:column}
     .hide{display: none;}
     .newsletter{flex-direction: column;}
@@ -566,9 +576,14 @@ footer{
     .blue-btn{display:block;}
     .header2 .right{display:block;}
     .openbtn{display:inline-block;}
-    .section-heading{width:70%;text-align: justify;}
-    .newsletter input{width:80%;}
+    .section-heading{width:70%;}
     .h{display:none}
     footer .right{float:left;}
+    div.gallery{width:100%;}
+    .sections{margin-bottom:100px}
+    .instafeed img{margin:4% 4%; width:29%;}
+    .testimonial .left-column{flex:15%}
+    .testimonial .right-column{flex:85%;}
+    .newsletter input{width:80%}
 
 }
