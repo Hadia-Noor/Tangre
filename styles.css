@@ -530,13 +530,13 @@ footer{
   }
   
 /*Media Queries*/
-@media screen and (max-width:680px){
+@media screen and (max-width:600px){
     .header1{display:none;}
     .nav{display:none;}
     div.gallery{width:100%;}
     .sections #row{flex-direction:column;}
     .testimonials{flex-direction:column}
-    .section-heading:first-child p{display: none;}
+    .hide{display: none;}
     .newsletter{flex-direction: column;}
     #row .categories{flex-direction: row;}
     .stats{display:flex;}
