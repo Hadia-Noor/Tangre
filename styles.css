@@ -567,7 +567,7 @@ footer{
     .header2 .right{display:block;}
     .openbtn{display:inline-block;}
     .section-heading{width:70%;text-align: justify;}
-    .newsletter input{display:none;}
+    .newsletter input{width:80%;}
     .h{display:none}
     footer .right{float:left;}
 
