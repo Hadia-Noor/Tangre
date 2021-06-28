@@ -318,6 +318,7 @@ div.desc p{
     align-content: center;
     background-color: transparent;
     width:70%;
+	padding-bottom:100px;
 }
 
 /*image styling in instagram feed section*/
