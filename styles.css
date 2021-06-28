@@ -1,3 +1,4 @@
+/*body styling*/
 body{
     margin:0 !important;
     padding:0;
@@ -5,27 +6,34 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#999999;
 }
+/*heder*/
 header{
     font-size:12px;
     font-weight:bold;
     color:black
 }
+/*upper header*/
 .header1{
     border: 1px solid #999999;
     padding:15px;
     padding-left: 50px;
     visibility:visible;
 }
+
+/*Left section of upper header*/
 .header-left{
     border-right: 1px solid #999999;
     padding:15px 15px 15px 0;
     margin:0px;
 }
+
+/*right section of upper header*/
 .header-right{
     padding :20px 15px 15px 20px;   
-    margin-right:40px;
+    margin-right:4vw;
     float:right;
 }
+/*rightmost section of upper header*/
 .header-right2{
     float:right;
     padding :20px 15px 15px 10px;  
@@ -33,15 +41,17 @@ header{
     border-left:1px solid #999999;
     border-right:1px solid #999999;
 }
+/*to apply float right on any element*/
 .right{
     float:right;
 }
+/*hiding the nav*/
 .header2 .right{
     display:none;
 }
+
 #menu{
     height:100% !important;
-    background: rgb(35, 1, 66);
     width:0px;
     bottom: 50%;
     overflow: hidden;
@@ -49,39 +59,46 @@ header{
     transition:0.5s; 
     margin-bottom: -101%;
     padding-bottom: 101%; 
-
 }
+/*grey icons styling*/
 .grey-icons{
     color:#999999;
     padding:0 5px;
 }
+/*logo*/
 .logo{
     font-size:20px;
     float:left;
 }
+
+/*header 2 styling start*/
 .header2{
     margin:10px 30px 30px 30px;
-    padding:20px;
+    padding:0 20px;
 }
+
+/*navbar in the header 2*/
 .nav{
     text-transform: uppercase;
-    padding:0 20px;
+    padding:0 2vw;
     float:right;
 }
+/*list styling in navbar*/
 .nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-  
-.nav  li{
+
+
+.nav li{
     float: left;
   }
   
 .nav li a {
     display: block;
-    padding: 8px;
+    padding: 0 8px;
     text-decoration:none;
     color:black;
 }
@@ -100,11 +117,11 @@ header{
 
 #banner .bottom-left {
     position: absolute;
-    top: 25px; /* adjust as desired */
-    left: 15px; /* adjust as desired */
+    top: 5%; /* adjust as desired */
+    left: 10%; /* adjust as desired */
     font-family: Helvetica Neue;
     font-weight: lighter;
-    font-size: 5rem;   
+    font-size: 5vw;   
 
   }
 
@@ -125,11 +142,11 @@ header{
     flex-direction: row;
 }
 #row1{
-    width:100%;
     display:flex;
     flex-direction: row;
     padding:10px;
-    justify-content: center;
+    text-align: center;
+    
 }
 .section-heading{
     margin:auto;
@@ -172,15 +189,26 @@ div.desc p{
     border-radius:5px;
 }
 .projects .categories{
-    padding-right: 35px ;
-    padding-top:60px;
-    padding-bottom:10px
+    justify-content: center;
+    align-self:center;
+    display:flex;
+    flex-wrap: wrap;
+    flex:50%;
+}
+.categories > div{
+  
+  margin: 5px;
+  text-align: center;
+  line-height: 35px;
+
 }
 .categories a{
     text-decoration: none;
-    color:#999999
+    color:#999999;
+    padding:0 20px;
 }
 
+/*testimonials*/
 .testimonials{
     background-image:linear-gradient(rgba(40, 171, 211, 0.5),rgba(40, 171, 211, 0.50)),url("xn3.png");
     width: 100%;    
@@ -198,7 +226,6 @@ div.desc p{
     margin:90px 40px;   
     display:flex;
     flex-direction:row;
-
 }
 .testimonial .left-column{
   flex:20%;
@@ -214,35 +241,25 @@ div.desc p{
     margin:10px;
 }
 
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(37, 37, 37);
-  color: #999;
-  text-align: center;
-  padding:1%;
+/*newsletter*/
+.newsletter {
+    display: flex;
+    flex-direction: row;   
+    align-content: center;
+ 
 }
-footer p{
-    float:left;
-    font-size: 12px;
-}
-footer .right i{
-    background-color: rgb(0, 0, 0);
-    width:30px;
-    padding:10px
-}
+/*newsletter input*/
 
 .newsletter input{
     border-radius:20px;
     height:20px;
-    width:350px;
+    width:80%;
     padding:10px;
     border:none;
     margin:10px
 }
 
+/*button in the newsletter*/
 .newsletter button{
     background-color: rgb(0, 195, 255);
     color:white;
@@ -254,13 +271,18 @@ footer .right i{
     margin-left:10px;
 }
 
-.newsletter {
-    display: flex;
-    flex-direction: row;   
-    align-content: center;
- 
+/*link in the newsletter*/
+.newsletter a{
+    text-decoration: none;
+    flex-direction: column;
+    color:#535353;
 }
-  
+/*list and paragraph in newsletter*/
+.newsletter p,li{
+    color:#535353;
+}
+
+ /*newsletter sections*/ 
 .flex-item-left {
     background-color: rgb(37, 37, 37);
     padding: 10px;
@@ -278,14 +300,8 @@ footer .right i{
     padding-bottom: 100px;
   }
 
-.newsletter a{
-    text-decoration: none;
-    flex-direction: column;
-    color:#535353;
-}
-.newsletter p,li{
-    color:#535353;
-}
+
+/*instagram feed section in newsletter*/
 .instafeed{
     display:flex;
     flex-direction:row;
@@ -293,12 +309,14 @@ footer .right i{
     background-color: white;
     width:70%;
 }
+
+/*image styling in instagram feed section*/
 .instafeed img{
-    margin:5px;
+    margin:2%;
     width:29%;
     height:70px}
 
-
+/*statisitics*/
 .stats{
     background:rgb(37, 37, 37);
     justify-content: center;
@@ -310,16 +328,22 @@ footer .right i{
     flex:70%;
 
 }
+
+/*heading 1 in statistics section*/
 .stats h1{
     font-weight:100;
 }
+
+/*black button styling*/
 .black-btn{
     border:1px solid #fff;
     background:transparent;
     color:#fff;
     padding:10px 20px;
     border-radius:5px;
+    cursor:pointer;
 }
+/*blue button styling*/
 .blue-btn{
     border:1px solid #fff;
     background:rgb(0, 195, 255);
@@ -327,7 +351,9 @@ footer .right i{
     padding:10px 20px;
     border-radius:5px;
     display:none;
+    cursor:pointer;
 }
+/*white button styling*/
 .white-btn{
     border:1px solid rgb(37, 37, 37);
     background:#fff;
@@ -336,7 +362,10 @@ footer .right i{
     border-radius:5px;
     font-weight:bolder;
     margin-top:40px;
+    cursor:pointer;
 }
+
+/*circle class in statistics*/
 .circle {
     border-radius: 50%;
     background: transparent;
@@ -348,23 +377,155 @@ footer .right i{
     justify-content: center;
     align-items: center;
     color:#fff
-  }
-  
-  .c2 {
+}
+
+/*Outer circle to show the progress*/
+.c2 {
     width: 90px;
-    height: 90px; /* as the half of the width */
+    height: 90px; 
     background:transparent;
     transform: rotate(-45deg);
     border-top-color: transparent;
-  }
-  
-  .c3 {
+}
+
+/*Inner circle*/
+.c3 {
     width: 50px;
     height: 50px;
     border-color: rgb(0, 195, 255);
     transform: rotate(45deg);
     background: rgb(0, 195, 255);
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
   }
+  
+/* Dropdown button */
+  .dropdown .dropbtn {
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+/* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    color:rgb(37, 37, 37);
+    display: block;
+    text-align: left;
+  }
+  
+/* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    color:rgb(0, 195, 255);
+  }
+  
+/* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Sidebar in mobile view*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+/*Link Inside the sidebar */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #373737;
+    display: block;
+    transition: 0.3s;
+}
+
+/*Sidebar links on hover*/
+.sidebar a:hover {
+    color:rgb(0,195,255);
+}
+
+/*button used to close sidebar*/
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*button to open sidebar*/
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color:rgb(0,195,255);
+    padding: 0px;
+    border: none;
+    background:#fff;
+    float:right;
+    display:none;
+}
+
+/*button on hover*/
+.openbtn:hover {
+    color: #373737;
+}
+ 
+/*transition*/
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/*Footer section Styling*/
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    color: #999;
+    text-align: center;
+    padding:1%;
+}
+
+/*paragraph in the footer*/
+  footer p{
+      float:left;
+      font-size: 12px;
+}
+
+/*footer icon styling*/
+  footer .right i{
+      background-color: rgb(0, 0, 0);
+      width:30px;
+      padding:10px
+  }
+  
 /*Media Queries*/
 @media screen and (max-width:680px){
     .header1{display:none;}
@@ -375,9 +536,9 @@ footer .right i{
     .section-heading:first-child p{display: none;}
     .newsletter{flex-direction: column;}
     #row .categories{flex-direction: row;}
-    #banner .bottom-left{font-size: 2rem;}
     .stats{display:flex;}
     .blue-btn{display:block;}
     .header2 .right{display:block;}
+    .openbtn{display:inline-block;}
 
 }
