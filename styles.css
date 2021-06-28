@@ -212,6 +212,13 @@ div.desc p{
     color:#999999;
     padding:0 10px;
 }
+.categories a:active{
+    color:rgb(0, 195, 255)
+ }
+.categories a:hover{
+   color:rgb(0, 195, 255)
+}
+
 
 /*testimonials*/
 .testimonials{
@@ -560,6 +567,8 @@ footer{
     .header2 .right{display:block;}
     .openbtn{display:inline-block;}
     .section-heading{width:70%;text-align: justify;}
-    
+    .newsletter input{display:none;}
+    .h{display:none}
+    footer .right{float:left;}
 
 }
