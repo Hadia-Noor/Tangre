@@ -30,14 +30,42 @@
                     <i class="fa fa-arrows-alt" style="color:rgb(0, 195, 255)"></i>
                     <span>Tangre</span>
                 </div>
-                <i class="right fa fa-bars fa-2x" style="color:rgb(0,195,255)"></i>
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">
+                        <i class="right fa fa-bars fa-lg" style="color:rgb(0,195,255)"></i>
+                    </button>  
+                </div>
+               
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#">Home</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                </ul>
+                  </div>                    
+                  
                 <div class="nav">
-                    <ul id="">
+                    <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <div class="dropdown">
+                        <li><a href="#" class="dropbtn">Blog <i class="fa fa-angle-down fa-lg"></i></a></li>
+                        <div class="dropdown-content">
+                            <a href="#">Blog 1</a>
+                            <a href="#">Blog 2</a>
+                          </div>
+                          </div>
+                          <div class="dropdown">
+                          <li><a href="#" class="dropbtn">Pages <i class="fa fa-angle-down fa-lg"></i></a></li>
+                          <div class="dropdown-content">
+                              <a href="#">Page 1</a>
+                              <a href="#">Page 2</a>
+                            </div>
+                            </div>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -136,7 +164,16 @@
                 <h1>Our Recent Completed Projects</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas bibendum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
-            
+            <div id="row1">
+                    <div class= "categories">
+                    <div><a href="#">All Categories</a></div>
+                    <div><a href="#">Branding</a></div>
+                    <div><a href="#">Image Manipulation</a></div>
+                    <div><a href="#">Creative Work</a></div>
+                    <div><a href="#">Web Design</a></div>
+                    <div><a href="#">Printed Material</a></div>
+                </div>
+            </div>
            
             <div id="row">
                 <div class="gallery">
@@ -266,7 +303,17 @@
 
       <!--JS-->
       <script>
-        
+        function openNav()
+        {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
     </script>
     </body>
 </html>
