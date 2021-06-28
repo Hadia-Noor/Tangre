@@ -108,6 +108,8 @@ header{
 .nav li a:hover{
     color:rgb(0,195,255);
 }
+
+/*banner section*/
 #banner{
     display: inline-block;
     position: relative;
@@ -123,8 +125,9 @@ header{
     font-weight: lighter;
     font-size: 5vw;   
 
-  }
+}
 
+/*styling for */
 .sections{
     margin-bottom: 300px;
 }
@@ -197,9 +200,9 @@ div.desc p{
 }
 .categories > div{
   
-  margin: 5px;
+  margin: 2px;
   text-align: center;
-  line-height: 35px;
+  line-height: 25px;
 
 }
 .categories a{
