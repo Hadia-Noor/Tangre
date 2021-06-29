@@ -19,14 +19,12 @@ header{
     padding-left: 50px;
     visibility:visible;
 }
-
 /*Left section of upper header*/
 .header-left{
     border-right: 1px solid #999999;
     padding:15px 15px 15px 0;
     margin:0px;
 }
-
 /*right section of upper header*/
 .header-right{
     padding :20px 15px 15px 20px;   
@@ -49,7 +47,6 @@ header{
 .header2 .right{
     display:none;
 }
-
 #menu{
     height:100% !important;
     width:0px;
@@ -74,13 +71,11 @@ header{
     font-size:1.1vw;
     float:left;
 }
-
 /*header 2 styling start*/
 .header2{
     margin:10px 30px 30px 30px;
     padding:0 20px;
 }
-
 /*navbar in the header 2*/
 .nav{
     text-transform: uppercase;
@@ -96,12 +91,9 @@ header{
     padding: 0;
     overflow: hidden;
 }
-
-
 .nav li{
     float: left;
-  }
-  
+}  
 .nav li a {
     display: block;
     padding: 0 8px;
@@ -114,7 +106,6 @@ header{
 .nav li a:hover{
     color:rgb(0,195,255);
 }
-
 /*banner section*/
 #banner{
     display: inline-block;
@@ -135,7 +126,6 @@ header{
     left: 10%; /* adjust as desired */
     font-weight: lighter;
     font-size: 5vw; 
-    opacity: 0.5;  
     text-align: start;
 
 }
@@ -149,7 +139,6 @@ header{
     text-align:center;
     margin:60px 0 10px;
 }
-
 #row{
     margin:auto;
     width:80%;
@@ -161,9 +150,7 @@ header{
     display:flex;
     flex-direction: row;
     padding:10px;
-    justify-content: center;
-
-    
+    justify-content: center;    
 }
 .section-heading{
     margin:auto;
@@ -171,27 +158,20 @@ header{
     text-align:center;
     margin-bottom: 20px;
 }
-
-
-
 div.gallery {
     margin: 1.2vw;
     border: 1px solid #ccc;
     width: 80%;
     border-top-right-radius:10px ;
     border-top-left-radius: 10px;
-
-}
-  
+}  
 div.gallery:hover {
     border: 1px solid rgb(175, 174, 174);
-}
-  
+}  
 div.gallery img {
     width: 100%;
     height: auto;
-}
-  
+}  
 div.desc {
     padding: 15px 5px;
     text-align: start;
@@ -203,13 +183,10 @@ div.desc p{
     color:#999;
     
 }
-
 .projects div.gallery{
     border:none;
-    margin-bottom:40px;
-   
+    margin-bottom:40px;   
 }
-
 .projects div.gallery img{
     height:80%;
     border-radius:5px;
@@ -218,7 +195,6 @@ div.desc p{
     text-align:center;
     color:rgb(90, 90, 90)
 }
-
 /*Categories*/
 .projects .categories{
     justify-content: center;
@@ -232,13 +208,11 @@ div.desc p{
   margin: 2px 1px;
   text-align: center;
   line-height: 25px;
-
 }
 .categories a{
     text-decoration: none;
     color:#999999;
     padding:0 2vw;font-size:1.2vw;
-
 }
 .categories a:active{
     color:rgb(0, 195, 255)
@@ -246,8 +220,6 @@ div.desc p{
 .categories a:hover{
    color:rgb(0, 195, 255)
 }
-
-
 /*testimonials*/
 .testimonials{
     background-image:linear-gradient(rgba(40, 171, 211, 0.5),rgba(40, 171, 211, 0.50)),url("xn3.png");
@@ -257,13 +229,12 @@ div.desc p{
     display:flex;
     flex-direction: row;    
 }
-
 .testimonials .testimonial{
 	height:auto;
 	padding:2%;
     background-color: #fff;
     color:#999999;
-    margin:90px 40px;   
+    margin:90px 40px ;   
     display:flex;
     flex-direction:row;
 }
@@ -279,15 +250,14 @@ div.desc p{
     color:rgb(90, 90, 90);
     font-size:110%;
 }
-
 /*newsletter*/
 .newsletter {
     display: flex;
     flex-direction: row;   
     align-content: center; 
     background-color: rgb(37, 37, 37) ;
+    margin-bottom: 0px;
 }
-
 /*newsletter input*/
 .newsletter input{
     border-radius:20px;
@@ -297,7 +267,6 @@ div.desc p{
     border:none;
     margin:20px 0px
 }
-
 /*button in the newsletter*/
 .newsletter button{
     background-color: rgb(0, 195, 255);
@@ -308,8 +277,8 @@ div.desc p{
     padding:10px;
     border:none;
     margin-left:0px;
+    
 }
-
 /*link in the newsletter*/
 .newsletter a{
     text-decoration: none;
@@ -320,7 +289,6 @@ div.desc p{
 .newsletter p,li{
     color:#535353;
 }
-
  /*newsletter sections*/ 
 .flex-item-left {
     background-color: rgb(37, 37, 37);
@@ -328,9 +296,7 @@ div.desc p{
     flex: 40%;
     padding-top:30px;
     padding-left:30px;
-
-}
-  
+}  
 .flex-item-right {
     background-color: rgb(37, 37, 37);
     padding: 10px;
@@ -344,9 +310,8 @@ div.desc p{
     flex: 20%;
     padding-top:30px;
     padding-left: 30px;
-    padding-bottom:20vw;
+    padding-bottom:100px;
 }
-
 /*instagram feed section in newsletter*/
 .instafeed{
     display:flex;
@@ -355,13 +320,12 @@ div.desc p{
     background-color: transparent;
     width:70%;
 }
-
 /*image styling in instagram feed section*/
 .instafeed img{
     margin:2%;
     width:29%;
-    height:70px}
-
+    height:70px;
+}
 /*statisitics*/
 .stats{
     background:rgb(37, 37, 37);
@@ -372,21 +336,17 @@ div.desc p{
     display:none;
     flex-direction: column;
     flex:70%;
-
 }
-
 /*content statistics section*/
 .stats .content{
     font-weight:100;
     text-align: start;
     margin:0 30px;
-    font-size: initial;
-   
+    font-size: initial;   
 }
 .stats h1{
     font-weight: 100;
 }
-
 /*black button styling*/
 .black-btn{
     border:1px solid #fff;
@@ -417,7 +377,6 @@ div.desc p{
     margin-top:40px;
     cursor:pointer;
 }
-
 /*circle class in statistics*/
 .circle {
     border-radius: 50%;
@@ -431,7 +390,6 @@ div.desc p{
     align-items: center;
     color:#fff
 }
-
 /*Outer circle to show the progress*/
 .c2 {
     width: 90px;
@@ -440,7 +398,6 @@ div.desc p{
     transform: rotate(-45deg);
     border-top-color: transparent;
 }
-
 /*Inner circle*/
 .c3 {
     width: 50px;
@@ -449,20 +406,17 @@ div.desc p{
     transform: rotate(45deg);
     background: rgb(0, 195, 255);
 }
-
 /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
-  }
-  
+}  
 /* Dropdown button */
 .dropdown .dropbtn {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
+}  
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -470,8 +424,7 @@ div.desc p{
     background-color: #fff;
     min-width: 160px;
     z-index: 1;
-}
-  
+}  
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -480,13 +433,11 @@ div.desc p{
     color:rgb(37, 37, 37);
     display: block;
     text-align: left;
-  }
-  
+}  
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     color:rgb(0, 195, 255);
-  }
-  
+}  
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -503,8 +454,7 @@ div.desc p{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-}
-  
+}  
 /*Link Inside the sidebar */
 .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -514,12 +464,10 @@ div.desc p{
     display: block;
     transition: 0.3s;
 }
-
 /*Sidebar links on hover*/
 .sidebar a:hover {
     color:rgb(0,195,255);
 }
-
 /*button used to close sidebar*/
 .sidebar .closebtn {
     position: absolute;
@@ -527,7 +475,6 @@ div.desc p{
     right: 25px;
     font-size: 36px;
 }
-
 /*button to open sidebar*/
 .openbtn {
     font-size: 20px;
@@ -540,48 +487,37 @@ div.desc p{
     display:inline;
     margin:-10px -40px;
 }
-
 /*button on hover*/
 .openbtn:hover {
     color: #373737;
-}
- 
+} 
 /*transition*/
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
-
 /*Footer section Styling*/
-
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(37, 37, 37);
-    color: #999;
+ 
+    padding: 10px;
     text-align: center;
-    padding:1%;
+    background-color: rgb(37, 37,37);
+    color: #999;
+    overflow:hidden;
 }
-
 /*paragraph in the footer*/
-  footer p{
+footer p{
       float:left;
       font-size: 12px;
 }
-
 /*footer icon styling*/
-  footer .right i{
+footer .right i{
       background-color: rgb(0, 0, 0);
       width:30px;
       padding:10px
-  }
-  
+} 
 .hide{
-    display:contents;
-    
+    display: contents;  
 }
 /*Media Queries*/
 @media screen and (max-width:600px){
@@ -608,10 +544,8 @@ footer{
     .testimonial .right-column{flex:85%;}
     .newsletter input{width:80%;}
     .logo{font-size:4vw}
-	.categories a{font-size:2.4vw}
+    .categories a{font-size:4vw}
     .section-heading p{font-weight: 100;}
-    
-
 }
 @media screen and (min-width:2000px)
 {
@@ -634,5 +568,4 @@ footer{
     div.gallery{width:100%;margin-top: 4vw;}
     div.gallery{width:200%}
     .categories a{font-size:1.2vw}
-
 }
