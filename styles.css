@@ -8,7 +8,7 @@ body{
 }
 /*heder*/
 header{
-    font-size:12px;
+    font-size:0.8vw;
     font-weight:bold;
     color:black
 }
@@ -71,7 +71,7 @@ header{
 }
 /*logo*/
 .logo{
-    font-size:20px;
+    font-size:1.1vw;
     float:left;
 }
 
@@ -86,7 +86,8 @@ header{
     text-transform: uppercase;
     padding:0 2vw;
     float:right;
-    margin:-20px;
+    margin:-30px -30px -30px 0;
+    margin-bottom:0.3vw;
 }
 /*list styling in navbar*/
 .nav ul{
@@ -120,8 +121,14 @@ header{
     position: relative;
     text-align: center;
     color: white;
+    background-image:url("home-banner-bg.png");
+    width: 100%;    
+    background-size: cover;  
 }
-
+#banner img{
+    width:100%;
+    margin: 0;
+}
 #banner .bottom-left {
     position: absolute;
     top: 5%; /* adjust as desired */
@@ -271,6 +278,7 @@ div.desc p{
     display: flex;
     flex-direction: row;   
     align-content: center; 
+    background-color: rgb(37, 37, 37) ;
 }
 
 /*newsletter input*/
@@ -523,7 +531,7 @@ div.desc p{
     background:#fff;
     float:right;
     display:inline;
-    margin:-10px -70px;
+    margin:-10px -40px;
 }
 
 /*button on hover*/
@@ -573,6 +581,7 @@ footer{
     .header1{display:none;}
     .nav{display:none;}
     div.gallery{width:120%;}
+    div.desc p{font-size:4vw}
     .sections #row{flex-direction:column; width:90%;margin-bottom:20px;justify-content: center;}
     .testimonials{flex-direction:column}
     .hide{display: none;}
@@ -591,5 +600,27 @@ footer{
     .testimonial .left-column{flex:15%}
     .testimonial .right-column{flex:85%;}
     .newsletter input{width:80%;}
+    .logo{font-size:4vw}
+    
+
+}
+@media screen and (min-width:2000px)
+{
+    body h1{font-size:2vw;}
+    body p{font-size:1.1vw}
+    .desc {font-size:1.5vw}
+    div.desc p{font-size:1.1vw}
+    .testimonials{font-size: 1vw;}
+    .newsletter{font-size: 1.1vw;}
+    .flex-item-right1{padding-bottom:10vw }
+    .instafeed img{width:5vw; height:auto}
+    .header2{padding-bottom: 1vw;}
+    .categories a{font-size: 1vw;margin:0 2vw 1vw 2vw}
+    .newsletter input{padding:1vw 1.4vw;font-size:1vw; border-radius:1.2vw}
+    .grey-icons{font-size:1.2vw;}
+    footer .right i{width:2vw}
+    .header-right2{margin-left:1vw}
+    .nav li{margin :0 1.1vw}
+    .newsletter button{padding:0.6vw 1.4vw 1.8vw; width:7vw; border-radius:1.2vw;font-size:1vw}
 
 }
